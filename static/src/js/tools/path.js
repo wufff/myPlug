@@ -1,6 +1,7 @@
 define(function(){
      return {
-         localhostImg:"/mySpace/img",
+         localhostImg:"/myPlug/img",
+         localTpl:"/myPlug/static/src/js/",
          imgPath:"http://images.dev.dodoedu.com/rjsPage/frontend/base/global/images"
      }
 })

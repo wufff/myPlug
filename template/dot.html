@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<title>多行省略</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/myPlug/static/src/style/reset.css">
+<link rel="stylesheet" type="text/css" href="/myPlug/static/src/style/icons/icon.css">
+</head>
+<style type="text/css">
+	p {
+		 width: 200px;
+		 height: 120px;
+		 border:1px solid red;
+		 word-wrap: break-word;
+		 font-size: 20px;
+		 margin: 0 auto;
+		 overflow: hidden;
+		
+	}
+	.c {
+		 height: 120px;
+	}
+	.c-div {
+		 width:200px; 
+		 margin: 0 auto;
+		 border:1px solid red;
+		 height: auto;
+	}
+   .c.opened {
+   	 height: auto;
+   }
+  .c.opened  .toggle .open {
+  	 display: none;
+  }
+
+ .c .toggle .close {
+  	 display: none;
+  }
+
+   .c.opened  .toggle .close {
+  	  display: inline;
+  }
+
+</style>
+<body>    
+   <p class="a">adfasdfadfasdfsadfasdfsadfasdfsadfasdfsadfasdfsadfasdfssasdfsadfasdfsadfasdfsadfasdfsadfasdfsadasdfsadfasdfsadfasdfsadfasdfsadfasdfsad</p>
+   <p class="b">中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文中文 中文中文中文中文中文中</p>
+   	   <p class="c">
+   	   	 <span class="inner">伸缩 中文中中文中文中文中文中文中文 中文中中文中文中文中文中文 中文中中文中文中文中文中文 中文中中文中文中文中文中文 中文中中文中文中文中文中文</span>
+   	   </p>
+  
+  
+</body>
+<script src="/myPlug/static/src/js/lib/require.js"></script>
+<script src="/myPlug/static/src/js/re-config.js"></script>
+<script src="/myPlug/static/src/js/myDot.js"></script>
+</html>

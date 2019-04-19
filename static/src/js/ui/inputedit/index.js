@@ -1,4 +1,4 @@
-define(['../../js/public'],function(pub) { 
+define(['jquery','path'],function($,path) { 
     /*
     thisdom:父节点（被编辑）
     infoTex：placeholder提示语
@@ -10,7 +10,7 @@ define(['../../js/public'],function(pub) {
 		totalNum:0,
 		currentNum:0, 
 		main:function(thisdom,infoTex,width,prompt,fn){
-			$.get(pub.commonParams.staticTkpath+"/frontend/modules/inputedit/index.tpl",function(data){
+			$.get(path.localTpl+"ui/inputedit/index.tpl",function(data){
 				$(thisdom).unbind("click").bind("click",function(event){		
 				     event.stopPropagation();			
 					 _self.clickFun($(this),thisdom,data,infoTex,width,prompt,fn);					
@@ -64,7 +64,7 @@ define(['../../js/public'],function(pub) {
 		blurFun:function(o,thisdom,data,infoTex,width,prompt,fn){
 
 			if($(thisdom).find('.inputVal.error').length>0){
-				promptMessageDialog({icon:"cha1", content:"请控制输入长度"});
+				alert("请控制输入长度");
 				return false;
 			}
 

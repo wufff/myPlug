@@ -13,6 +13,8 @@
    	name:"lookImgPage"
    },{
    	name:"myExp"
+   },{
+      name:"inputEdite"
    }]
 })
 
