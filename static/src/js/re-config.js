@@ -6,6 +6,9 @@ require.config({
 			"bootstrap":"./lib/bootstrap/bootstrap.min.3.3.7",
 			"bootstrap-hover-dropdown":"./lib/bootstrap/extend/bootstrap-hover-dropdown.min",
 			"nicescroll":"./lib/jquery.nicescroll",
+			"velocity": "./lib/velocity/velocity1.5.2",
+			"velocity-ui": "./lib/velocity/velocity.ui1.5.2",
+			"aos":"./lib/aos/aos",
 			"expression": "./ui/expression",
 			"album": "./ui/album",
 			"dialog": "./ui/dialog",
@@ -28,6 +31,12 @@ require.config({
          },
          "fly":{
          	deps:['jquery']
-         }
+         },
+         "velocity":{
+            deps: ["jquery"]
+        },
+        "velocity-ui":{
+            deps: ["velocity"]
+        }
 	}
 });
