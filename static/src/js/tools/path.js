@@ -1,7 +1,12 @@
 define(function(){
      return {
-         localhostImg:"/myPlug/img",
-         localTpl:"/myPlug/static/src/js/",
-         imgPath:"http://images.dev.dodoedu.com/rjsPage/frontend/base/global/images"
+         api:"",
+         upLoad:"/upload",
+         loginUrl:"http://account.dev.dodoedu.com/login/login/"
      }
+     // return {
+     //     api:"",
+     //     upLoad:"/upload",
+     //     loginUrl:"http://account.dodoedu.com/login/login/"
+     // }
 })

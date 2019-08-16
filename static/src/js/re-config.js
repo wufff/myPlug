@@ -17,7 +17,8 @@ require.config({
 			"inputE":"./ui/inputedit/index",
 			"fly":"./lib/fly",
 			"anchor":"./ui/Anchor",
-			"dot":"./lib/jquery.dotdotdot.min.umd"
+			"dot":"./lib/jquery.dotdotdot.min.umd",
+			"ui":"./ui/change"
 	},
 	shim: {
          "bootstrap":["jquery"],
