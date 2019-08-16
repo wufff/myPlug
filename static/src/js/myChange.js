@@ -3,6 +3,7 @@ require(["jquery","ui"],function($,ui){
       ui.getdate('.time');
       ui.hover('.box','jello');
       ui.tabdiv('.tab','.tab_content',"click",800)
+      ui.ellipsis('.wrap')
       
       
 
