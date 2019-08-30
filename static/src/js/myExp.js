@@ -5,24 +5,6 @@ require(["jquery","expression"],function($,face){
       var str = "你好[微笑]你好[耍酷]";
       var html = "<p>"+face.replaceSmile(str)+"<p>"
       $(".faceText").html(html); 	
-    
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 })
 

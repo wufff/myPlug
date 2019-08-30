@@ -18,7 +18,8 @@ require.config({
 			"fly":"./lib/fly",
 			"anchor":"./ui/Anchor",
 			"dot":"./lib/jquery.dotdotdot.min.umd",
-			"ui":"./ui/change"
+			"ui":"./ui/change",
+			"sHover":"./ui/sHover.min"
 	},
 	shim: {
          "bootstrap":["jquery"],

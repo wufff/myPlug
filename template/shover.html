@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+<title>多行省略</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" type="text/css" href="/myPlug/static/src/style/reset_mobile.css">
+<link rel="stylesheet" type="text/css" href="/myPlug/static/src/style/icons/icon.css">
+</head>
+<style type="text/css">
+    body{
+
+    }
+    ul {
+    	 overflow: hidden;
+    	 list-style: none;
+    	 width: 900px;
+    	 margin: 300px auto 300px auto;
+    }
+	ul li {
+       float: left;
+       width: 300px;
+       height: 300px;
+       position: relative;
+       border-right: 1px solid orange;
+       box-sizing: border-box;
+	}
+   ul li .mask {
+   	  width: 100%;
+   	  height: 100%;
+   	  background: rgba(0,0,0,0.5);
+   	  position: absolute;
+   	  left: 0;
+   	  top: 0;
+   	  color:#fff;
+   }
+</style>
+<body>
+    <ul>
+        <li class="sHoverItem">
+        	rqerqr
+            <div class="mask">一12323adfas</div>
+        </li>
+        <li  class="sHoverItem">
+        	qereqwr
+            <div class="mask">二afadfwf</div>
+        </li>
+        <li  class="sHoverItem">
+        	qer
+            <div class="mask">三2323adfsd</div>
+        </li>
+        <li  class="sHoverItem">
+        	qerqew
+            <div class="mask">四2323adff</div>
+        </li>
+        <li  class="sHoverItem">
+        	qerqew
+            <div class="mask">五2323adff</div>
+        </li>        
+    </ul>
+</body>
+<script src="/myPlug/static/src/js/lib/require.js"></script>
+<script src="/myPlug/static/src/js/re-config.js"></script>
+<script src="/myPlug/static/src/js/myShover.js"></script>
+</html>
