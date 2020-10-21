@@ -9,11 +9,11 @@
 <link rel="stylesheet" type="text/css" href="/mySpace/static/src/style/reset.css">
 
 </head>
-<body>    
-<script type="text/javascript" src="/mySpace/static/src/js/lib/jquery/jquery.js"></script>
-<script type="text/javascript" src="/mySpace/static/src/js/ui/drawing/html2canvas.js"></script>
-<script type="text/javascript" src="/mySpace/static/src/js/ui/drawing/canvas2Image.js"></script>
-<script src="/mySpace/static/src/js/ui/drawing/jscolor.js"></script>
+<body>
+<script type="text/javascript" src="/myPlug/static/src/js/lib/jquery/jquery.js"></script>
+<script type="text/javascript" src="/myPlug/static/src/js/ui/drawing/html2canvas.js"></script>
+<script type="text/javascript" src="/myPlug/static/src/js/ui/drawing/canvas2Image.js"></script>
+<script src="/myPlug/static/src/js/ui/drawing/jscolor.js"></script>
 <div style="text-align:right">
 	<input class="jscolor" value="ab2567">
 	<a class="btn btn-primary btn-xs" onclick="cancelCanvas()">撤销</a>
@@ -24,7 +24,7 @@
   <div style="border:1px solid red;">
   	   <canvas id='myCanvas2'  width="800" height="600"></canvas>
   </div>
-  
+
 <script>
 var mousePressed = false;
 var lastX, lastY;
@@ -33,7 +33,7 @@ var obj;
 $(function(){
    // if($('#myCanvas2').length == 0)
    // {
-       Drawing(); 
+       Drawing();
        InitThis();
        jscolor.installByClassName('jscolor')
     // }
@@ -65,7 +65,7 @@ function InitThis()
     $('#myCanvas2').mousedown(function(e) {
         e.stopPropagation()
         mousePressed = true;
-        var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top 
+        var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top
         Draw(x, y, false);
         temporary = []
         temporary.push({x:x,y:y})
@@ -73,7 +73,7 @@ function InitThis()
     $('#myCanvas2').mousemove(function(e) {
         e.stopPropagation()
         if (mousePressed) {
-            var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top 
+            var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top
             Draw(x, y, true);
             temporary.push({x:x,y:y})
         }
@@ -92,7 +92,7 @@ function InitThis()
     //     ev.preventDefault();
     //     var e = ev.originalEvent.touches[0];
     //     mousePressed = true;
-    //     var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top 
+    //     var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top
     //     Draw(x, y, false);
     //     temporary.push({x:x,y:y});
     // });
@@ -100,7 +100,7 @@ function InitThis()
     //     ev.preventDefault();
     //     if (mousePressed) {
     //         var e = ev.originalEvent.touches[0];
-    //         var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top 
+    //         var x = e.pageX - $(this).offset().left,y = e.pageY - $(this).offset().top
     //         Draw(x, y, true);
     //         temporary.push({x:x,y:y});
     //     }
@@ -110,7 +110,7 @@ function InitThis()
     //     mousePressed = false;
     //     canvasimage.push(temporary);
     //     temporary = []
-    // });    
+    // });
 }
 
 function Draw(x, y, isDown) {
@@ -162,7 +162,7 @@ function draw2(x,y,isDown){
 }
 
 function clearCanvas()
-{   
+{
 	console.log("1231");
     Drawing();
 }

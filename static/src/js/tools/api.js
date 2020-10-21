@@ -1,4 +1,4 @@
-define(["layui","path"], function(layui,path) {
+define(["layui","static/src/js/tools/paths"], function(layui, path) {
 	var layer = layui.layer;
 	var $ = jquery = layui.jquery;
 	return {
@@ -35,13 +35,13 @@ define(["layui","path"], function(layui,path) {
 					} catch (ex) {
 						obj = data;
 					}
-					
+
 					if (obj.type == "success"){
 		                  SuccessCallback(obj,successPar);
 		             }else{
 		                   layer.msg(obj.message,{icon:5});
 		            }
-					
+
 				},
 				error: function(err) {
 					console.log(err);
@@ -69,10 +69,10 @@ define(["layui","path"], function(layui,path) {
                 }else{
                      layer.msg(res.message,{icon:5});
                 }
-                
+
             },
             error: function (res) {
-            	var obj = { 
+            	var obj = {
                     type:"ajax返回错误",
                     data:res
             	 }

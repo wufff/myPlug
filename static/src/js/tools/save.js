@@ -1,4 +1,4 @@
-define(['layui','path'],function(layui,path){
+define(['layui','static/src/js/tools/paths'],function(layui, path){
      var $ = jQuery = layui.jquery;
      return {
          //存储
@@ -28,7 +28,7 @@ define(['layui','path'],function(layui,path){
             var value = $("#wf"+key).val();
             return value;
          },
-      
+
        //jueryCook
     cookie:function(name, value, options) {
     if (typeof value != 'undefined') { // name and value given, set cookie
@@ -72,7 +72,7 @@ define(['layui','path'],function(layui,path){
         return cookieValue;
     }
 }
-    
-    
-    }  
+
+
+    }
 })

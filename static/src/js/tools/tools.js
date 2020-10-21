@@ -1,4 +1,4 @@
-define(['layui','path'],function(layui,path){
+define(['layui','static/src/js/tools/paths'],function(layui, path){
      var $ = jQuery = layui.jquery;
      return {
          //存储
@@ -54,7 +54,7 @@ define(['layui','path'],function(layui,path){
                 var Reznow = prevDate.toLocaleDateString('zh-Hans-CN').replace(/日/g, '').replace(/\/|年|月/g, '-').replace(/[^\d-]/g,'');
                 Rez = Reznow.replace(/\//g,'-')
                 return Rez;
-                
+
             },
         nextWeek:function(dateStr){
                 var sdate = new Date(Date.parse(dateStr.replace(/-/g, "/")))
@@ -96,7 +96,7 @@ define(['layui','path'],function(layui,path){
             var addDays = index * 7 - day + 1;
             var mondayDt = new Date(today.getTime() + addDays * millisecond );
             var sundayDt = new Date(today.getTime() + (addDays + 6) * millisecond );
-          
+
             var  startDay = setStandardTimeto(mondayDt);
             var  lastDay =  setStandardTimeto(sundayDt);
             return {
@@ -116,7 +116,7 @@ define(['layui','path'],function(layui,path){
             }
             return theRequest[paramName];
           },
-       //获得url   
+       //获得url
         request:function  (name) {
         var args = getQueryStringArgs ()
         var result = "";
@@ -183,9 +183,9 @@ define(['layui','path'],function(layui,path){
         return cookieValue;
     }
 }
-    
-    
-    }  
+
+
+    }
 })
 
 function getQueryStringArgs () {
@@ -213,5 +213,5 @@ function getQueryStringArgs () {
 function  setStandardTimeto(d){
     // + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
      youWant = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-     return youWant;      
+     return youWant;
 };

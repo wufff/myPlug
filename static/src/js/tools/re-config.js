@@ -12,7 +12,7 @@ require.config({
 			"expression": "./ui/expression",
 			"album": "./ui/album",
 			"dialog": "./ui/dialog",
-			"path":"./tools/path",
+			"paths":"./tools/paths",
 			"page": "./tools/pags",
 			"inputE":"./ui/inputedit/index",
 			"fly":"./lib/fly",

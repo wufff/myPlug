@@ -1,11 +1,11 @@
 /**
- * 
+ *
  * @authors Your Name (you@example.org)
  * @date    2018-10-25 09:38:20
  * @version $Id$
  */
 
-define(["jquery", "path"], function($, publicPatch) {
+define(["jquery", "paths"], function($, publicPatch) {
 	$.extend({
 		unselectContents: function() {
 			if (window.getSelection) {
@@ -44,7 +44,7 @@ define(["jquery", "path"], function($, publicPatch) {
 			};
 			$(this).click(initSetCaret).select(initSetCaret).keyup(initSetCaret);
 		},
-		
+
 	});
 
 	var my = {

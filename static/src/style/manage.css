@@ -129,11 +129,6 @@ html,body {height: 100%;}
 .layui-table-click, .layui-table-hover { background-color: transparent !important; }
 
 
-
-
-
-
-
 #upload .upform .item { font-size: 15px;margin-bottom: 18px; }
 #upload .upform .item .dt { float: left; width:158px;text-align: left;margin-right: 10px;font-size: 15px;padding-top: 6px;padding-left: 30px; }
 #upload .upform .item .dd { float: left; }

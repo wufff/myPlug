@@ -1,4 +1,4 @@
-define(['layui','path'],function(layui,path){
+define(['layui','static/src/js/tools/paths'],function(layui, path){
      var $ = jQuery = layui.jquery;
      return {
         //格式化
@@ -41,7 +41,7 @@ define(['layui','path'],function(layui,path){
 					else if(myweekday == 6)
 					weekday=" 星期六 ";
 					$(ele).text(year+"年"+mymonth+"月"+myday+"日 "+weekday)
-				},         
+				},
          //时间
         prevWeek:function(dateStr){
                 var sdate = new Date(Date.parse(dateStr.replace(/-/g, "/")))
@@ -88,7 +88,7 @@ define(['layui','path'],function(layui,path){
             var addDays = index * 7 - day + 1;
             var mondayDt = new Date(today.getTime() + addDays * millisecond );
             var sundayDt = new Date(today.getTime() + (addDays + 6) * millisecond );
-          
+
             var  startDay = setStandardTimeto(mondayDt);
             var  lastDay =  setStandardTimeto(sundayDt);
             return {
@@ -96,7 +96,7 @@ define(['layui','path'],function(layui,path){
                last:lastDay
              }
         }
-    }  
+    }
 })
 
 
@@ -104,5 +104,5 @@ define(['layui','path'],function(layui,path){
 function  setStandardTimeto(d){
     // + ' ' + d.getHours() + ':' + d.getMinutes() + ':' + d.getSeconds();
      youWant = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate();
-     return youWant;      
+     return youWant;
 };

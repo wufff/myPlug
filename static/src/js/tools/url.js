@@ -1,4 +1,4 @@
-define(['path','layui'],function(path,layui){
+define(['static/src/js/tools/paths','layui'],function(path, layui){
 	 var layer = layui.layer;
      var $ = jQuery = layui.jquery;
      var my =  {
@@ -90,7 +90,7 @@ define(['path','layui'],function(path,layui){
         }else{
              return result;
         }
-       
+
        }
      }
      return my;

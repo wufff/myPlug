@@ -24,23 +24,26 @@
 		 height: 150px;
 		 border:1px solid red;
 	}
+   .active {
+      background: red;
+    }
 </style>
-<body>    
+<body>
    <div class="time" style="height: 60px;">
-   	
+
    </div>
    <div class="box animated">
- 
+
    </div>
    <ul>
-   	 <li class="tab">tab1</li>
+   	 <li class="tab active">tab1</li>
    	 <li class="tab">tab2</li>
    	 <li class="tab">tab3</li>
    </ul>
    <div>
    	 <div class="tab_content">11111contetnadfaff</div>
-   	 <div class="tab_content">22222contetnadfaff</div>
-   	 <div class="tab_content">3333contetnadfaf</div>
+   	 <div class="tab_content" style="display: none;">22222contetnadfaff</div>
+   	 <div class="tab_content" style="display: none;">3333contetnadfaf</div>
    </div>
    <div class="wrap">
    	 <p style="visibility:hidden;">
@@ -58,6 +61,6 @@
    </div>
 </body>
 <script src="/myPlug/static/src/js/lib/require.js"></script>
-<script src="/myPlug/static/src/js/re-config.js"></script>
+<script src="/myPlug/static/src/js/tools/re-config.js"></script>
 <script src="/myPlug/static/src/js/myChange.js"></script>
 </html>

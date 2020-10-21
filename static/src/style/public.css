@@ -1,5 +1,5 @@
 /*=reset========================*/
-ul { list-style: none; padding: 0} 
+ul { list-style: none; padding: 0}
 a:hover { text-decoration: none; }
 .container { width:1200px;margin: 0 auto;position: relative; }
 .clearer:after{
@@ -18,8 +18,6 @@ a:hover { text-decoration: none; }
 .white {
 	  color:#fff !important;
 }
-
-
 
 
 /*=dialog========================*/
@@ -100,7 +98,7 @@ body .layui-btn-primary:hover {
 
 
 /*//三联动*/
-.select-main { 
+.select-main {
      visibility: hidden;
      width: 460px;
      overflow: hidden;
@@ -118,7 +116,7 @@ body .layui-btn-primary:hover {
 
 .list-box .list-scroll {
 	 width: 150px;
-	 float: left; 
+	 float: left;
 	 height: 183px;
 	 background: #fff;
 	 border-bottom: 1px solid #ddd;
@@ -126,14 +124,14 @@ body .layui-btn-primary:hover {
 }
 
 #list-scroll, #list-scroll1 ,#list-scroll2{
-	 box-shadow: 1px 0px 3px rgba(0,0,0,.1) 
+	 box-shadow: 1px 0px 3px rgba(0,0,0,.1)
 }
 #list-scroll1,  #list-scroll{
 	 border-right: 1px solid #f2f2f2;
 }
 .list-box .list-scroll .scroll-item {
 	  height: 36px;
-	  line-height: 36px;  
+	  line-height: 36px;
 	  cursor: pointer;
 	  text-align: center;
 	  overflow: hidden;

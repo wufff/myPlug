@@ -1,0 +1,2 @@
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,li,header,section,form{margin:0;padding:0;-webkit-text-size-adjust:100%;font-family:Helvetica;box-sizing:border-box;line-height:1.2}ul,ol,dl,dd{list-style:none}a{text-decoration:none}a,input,button,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-appearance:none;outline:0}textarea{box-shadow:0 0 0 rgba(0,0,0,0);border-radius:0}*:not(input,textarea){-webkit-touch-callout:none;-webkit-user-select:none}.clearfix:after{content:"";display:block;height:0;clear:both;visibility:hidden}
+ div { box-sizing: border-box;}

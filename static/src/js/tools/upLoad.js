@@ -1,4 +1,4 @@
-define(["jquery","path"],function($,path){
+define(["jquery","static/src/js/tools/paths"],function($, path){
    var my =  {
          img:function(button,Image){
 			var uploader = new plupload.Uploader({
@@ -129,7 +129,7 @@ define(["jquery","path"],function($,path){
 						// 		obj.name = file.name;
 						// 		obj.size = plupload.formatSize(file.size);
       //                           arry.push(obj);
-						// }); 
+						// });
 
                         plupload.each(files, function(file) {
 			                    	    if(!$(".img_item") || $(".img_item").length < num) {
@@ -139,7 +139,7 @@ define(["jquery","path"],function($,path){
 									         html +=            '<img src="">'
 									         html +=        '</div>'
 									         html +=         '<a href="javascript:void(0)" class="del_upImg">删除</a>'
-									         html += '</div>' 
+									         html += '</div>'
 			                              $("#imglist").append(html);
 			                                uploader.start();
 			                    	    }
@@ -148,8 +148,8 @@ define(["jquery","path"],function($,path){
 							    previewImage(file, function(url) {
 							    $("#"+file.id).find("img").attr("src", url);
 							});
-						}); 
-                       	
+						});
+
 					},
 
 					UploadProgress: function(up, file) {
@@ -242,21 +242,21 @@ define(["jquery","path"],function($,path){
 			                    	    }
 			                            uploader_mp4.start();
 			                    });
-			                  
+
 			            },
 
 			            UploadProgress: function(up, file) {
 			            	if(document.getElementById(file.id)){
 			            		document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
 			            	}
-			                
+
 			            },
 			            // Error: function(up, err) {
 			            //     document.getElementById('mp4_console').appendChild(document.createTextNode("\nError #" + err.code + ": " + err.message));
 			            // },
-			            
+
 			            OptionChanged: function(up, option_name, new_value, old_value) {
-			                  
+
 			            }
 			    }
 			});
@@ -274,7 +274,7 @@ define(["jquery","path"],function($,path){
 		},
 
 		doc: function(button,num,dx,lx) {
-			
+
 			var uploader_doc = new plupload.Uploader({
 				runtimes: 'html5,flash,silverlight,html4',
 				browse_button: button,
@@ -296,7 +296,7 @@ define(["jquery","path"],function($,path){
 				init: {
 					PostInit: function() {
 						// document.getElementById('doclist').innerHTML = '';
-						
+
 					},
 
 					FilesAdded: function(up, files) {
@@ -305,7 +305,7 @@ define(["jquery","path"],function($,path){
                                    if(!domlist || domlist.length < num){
                                    	   var html = '<div id="' + file.id + '" class="doc_item uplist">' + '<span class="fileName">' + file.name +'</span>'+ ' (' + plupload.formatSize(file.size) + ') <b></b> <a href="javascript:void(0)" class="deldoc">删除</a>';
 	                                   html += '<input type="hidden" class="'+ button +'_docPath" value=""></div>'
-	                                   $("#"+ button +"_list" ).append(html);   
+	                                   $("#"+ button +"_list" ).append(html);
                                    }
 		                    });
 		                    uploader_doc.start();
